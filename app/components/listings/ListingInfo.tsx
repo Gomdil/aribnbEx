@@ -18,7 +18,7 @@ interface ListingInfoProps{
     roomCount:number;
     guestCount:number;
     bathroomCount:number;
-    category:{
+    category?:{
         icon:IconType;
         label:string;
         description:string;

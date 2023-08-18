@@ -12,6 +12,7 @@ import Heading from '../Heading';
 import Calendar from '../inputs/Calendar';
 import { TbHealthRecognition } from 'react-icons/tb';
 import Counter from '../inputs/Counter';
+import { Range } from 'react-date-range';
 
 
 enum STEPS {
@@ -145,8 +146,8 @@ const SearchModal = () => {
                 />
 
                 <Calendar
-                    value={dateRange}
-                    onChange={(value)=> setDateRange(value.selection)}
+                onChange={(value) => setDateRange(value.selection)}
+                value={dateRange}
                 />
 
             </div>

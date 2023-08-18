@@ -7,14 +7,14 @@ import qs from 'query-string'
 
 interface CategoryBoxProps{
     label :  string 
-    ,desscription :  string 
+    ,description :  string 
     ,icon : IconType
     ,selected?: boolean
 }
 
 const CategoryBox:React.FC<CategoryBoxProps> = ({
     label
-    ,desscription
+    ,description
     ,icon:Icon 
     , selected
 }) => {

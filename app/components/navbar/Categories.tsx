@@ -15,89 +15,89 @@ export const categories = [
     {
         label:'Beach',
         icon:TbBeach,
-        desscription: 'This property is close to the beach!'
+        description: 'This property is close to the beach!'
     },
     {
         label:'WindMills',
         icon:GiWindmill,
-        desscription: 'This property has windmill!'
+        description: 'This property has windmill!'
     },
     {
         label:'Modern',
         icon:MdOutlineVilla,
-        desscription: 'This property is Modern!'
+        description: 'This property is Modern!'
     }
     ,
     {
         label:'Countryside',
         icon:TbMountain,
-        desscription: 'This property is on the Countryside!'
+        description: 'This property is on the Countryside!'
     }
     ,
     {
         label:'Pools',
         icon:TbPool,
-        desscription: 'This property has a Pools!'
+        description: 'This property has a Pools!'
     }
     ,
     {
         label:'IsLands',
         icon:GiIsland,
-        desscription: 'This property is on an  isLands!'
+        description: 'This property is on an  isLands!'
     }
     ,
     {
         label:'Lake',
         icon:GiBoatFishing,
-        desscription: 'This property is close to a lake!'
+        description: 'This property is close to a lake!'
     }
     ,
     {
         label:'Skiing',
         icon:FaSkiing,
-        desscription: 'This property has skiing activities!'
+        description: 'This property has skiing activities!'
     }
     ,
     {
         label:'Castles',
         icon:GiCastle,
-        desscription: 'This property is in a castles!'
+        description: 'This property is in a castles!'
     }
     ,
     {
         label:'Camping',
         icon:GiForestCamp,
-        desscription: 'This property has camping!'
+        description: 'This property has camping!'
     }
     ,
     {
         label:'Arctic',
         icon:BsSnow,
-        desscription: 'This property has camping!'
+        description: 'This property has camping!'
     }
     ,
     {
         label:'Cave',
         icon:GiCaveEntrance,
-        desscription: 'This property in a cave!'
+        description: 'This property in a cave!'
     }
     ,
     {
         label:'Desert',
         icon:GiCactus,
-        desscription: 'This property is in the desert'
+        description: 'This property is in the desert'
     }
     ,
     {
         label:'Barns',
         icon:GiBarn,
-        desscription: 'This property is in the barn!'
+        description: 'This property is in the barn!'
     }
     ,
     {
         label:'Lux',
         icon:IoDiamond,
-        desscription: 'This property is in the luxurious!'
+        description: 'This property is in the luxurious!'
     }
     
 ]
@@ -133,7 +133,7 @@ const Categories = () => {
                         label={item.label}
                         selected={catetory === item.label}
                         icon={item.icon} 
-                        desscription={""}                    />
+                        description={""}                    />
                 ))}
             </div>
         </Container>
