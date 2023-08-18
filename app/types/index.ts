@@ -10,7 +10,7 @@ export type safeListings = Omit<
 
 export type SafeUser = Omit<
     User,
-    "createdAt" | "updatedAt" | "emailVerified"
+    "createAt" | "updateAt" | "emailVerified"
 > & {
     createAt : string;
     updateAt: string ;
