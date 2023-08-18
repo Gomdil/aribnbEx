@@ -3,27 +3,32 @@ import { Listing, Reservation, User } from "@prisma/client";
 
 export type safeListings = Omit<
     Listing,
-    "createdAt"
+    "createdAt" | "createAt"
 > & {
-    createdAt : string
+    createdAt : string;
+    createAt : string;
 }
 
 export type SafeUser = Omit<
     User,
-    "createdAt" | "updatedAt" | "emailVerified"
+    "createdAt" | "updatedAt" | "emailVerified" | "createAt" | "updateAt"
 > & {
     createdAt : string;
     updatedAt: string ;
-    emailVerified: string | null
+    emailVerified: string | null;
+    createAt : string ;
+    updateAt : string ;
+    
 };
 
 
 export type SafeResertion = Omit<
     Reservation,
-    "createdAt" | "startDate" | "endDate" | "listing"
+    "createdAt" | "startDate" | "endDate" | "listing" | "createAt"
 > & {
     createdAt : string;
     startDate : string;
     endDate : string;
-    listing : safeListings
+    listing : safeListings;
+    createAt : string ;
 }
